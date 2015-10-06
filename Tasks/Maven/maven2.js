@@ -231,10 +231,6 @@ mvnv.exec()
     if (runFailed) {
         tl.exit(1); // exit with a non-zero code to mark the entire task as having failed
     } else {
-        if (!code) {
-            code = 0; // task success
-        }
-
         tl.exit(code);
     }
 });
